@@ -3759,7 +3759,8 @@ __webpack_require__.r(__webpack_exports__);
       vfOptions: {
         autoplay: true
       },
-      vfImages: [this.$asseturl + "assets/img/padmabanner.jpeg", this.$asseturl + "assets/img/slider2.jpg", this.$asseturl + "assets/img/smart_bangladesh.jpeg", this.$asseturl + "assets/img/pm-smart-bangladesh-en.jpeg", this.$asseturl + "assets/img/digital-connectivity.jpeg" // this.$asseturl + "assets/img/61ed07bbaac6b597183901.jpg",
+      vfImages: [this.$asseturl + "assets/img/padmabanner.jpeg", // this.$asseturl + "assets/img/slider2.jpg",
+      this.$asseturl + "assets/img/smart_bangladesh.jpeg", this.$asseturl + "assets/img/pm-smart-bangladesh-en-1.jpeg", this.$asseturl + "assets/img/digital-connectivity.jpeg" // this.$asseturl + "assets/img/61ed07bbaac6b597183901.jpg",
       // this.$asseturl + "assets/img/slide1.jpeg",
       // this.$asseturl + "assets/img/slide2.jpeg",
       // this.$asseturl+"assets/img/padmabanner.jpeg",
@@ -4170,28 +4171,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }))();
     },
     getuniounFun: function getuniounFun() {
-      var _this4 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
-        var res;
-        return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-          while (1) {
-            switch (_context4.prev = _context4.next) {
-              case 0:
-                _context4.next = 2;
-                return _this4.callApi('get', "/api/getunioun?id=".concat(_this4.thana), []);
-
-              case 2:
-                res = _context4.sent;
-                _this4.getuniouns = res.data;
-
-              case 4:
-              case "end":
-                return _context4.stop();
-            }
-          }
-        }, _callee4);
-      }))();
+      window.location.href = this.thana + this.CustomUrl; //  var res = await this.callApi('get',`/api/getunioun?id=${this.thana}`,[]);
+      //  this.getuniouns = res.data;
     },
     changeunioun: function changeunioun() {
       window.location.href = this.unioun + this.CustomUrl; // console.log(this.unioun+this.CustomUrl)
@@ -8576,9 +8557,9 @@ var staticRenderFns = [function () {
     staticClass: "col-md-12"
   }, [_c("h6", {
     staticClass: "serviceTitle position-relative defaltColor"
-  }, [_vm._v("\n                                ক্যাশলেস ইউনিয়ন পরিষদ সেবা\n                            ")])]), _vm._v(" "), _c("div", {
-    staticClass: "col-md-12"
-  }, [_c("p", [_vm._v("\n                                ইউনিয়ন পরিষদ হল বাংলাদেশে পল্লী অঞ্চলের\n                                সর্বনিম্ন প্রশাসনিক একক। গ্রাম চৌকিদারি আইনের\n                                ১৮৭০ এর অধীনে ইউনিয়ন পরিষদের সৃষ্টি হয়। প্রাথমিক\n                                পর্যায়ে এর ভূমিকা নিরাপত্তামূলক কর্মকাণ্ডে\n                                সীমাবদ্ধ থাকলেও পরবর্তী কালে এটিই স্থানীয়\n                                সরকারের প্রাথমিক ইউনিটের ভিত্তিরুপে গড়ে উঠে।\n                                বর্তমানে ইউনিয়ন পরিষদ থেকে ট্রেড লাইসেন্স,\n                                চারিত্রিক সনদপত্র, ভূমিহীন সনদপত্র, ওয়ারিশান\n                                সনদপত্র, অবিবাহিত সনদপত্র, প্রত্যয়নপত্র,\n                                অস্বচ্ছল প্রত্যয়নপত্র, নাগরিক সনদপত্র,\n                                উত্তরাধিকার সনদপত্র ইত্যাদি সেবা প্রদান করা হয়।\n                                বহুল প্রচলিত এই সকল সেবাকে জনবান্ধব করার জন্য\n                                একটি ডিজিটাল প্লাটফর্ম অত্যাবশ্যকীয় হয়ে পড়ে। সে\n                                লক্ষ্যে ইউনিয়ন পরিষদ থেকে প্রদত্ত সেবাসমূহকে\n                                জনগণের কাছে স্বল্প খরচে, স্বল্প সময়ে এবং\n                                হয়রানিমুক্তভাবে প্রদান নিশ্চিত করার জন্য একটি\n                                এ্যাপ্লিকেশন থেকে সকল সেবা প্রদানের নিমিত্ত গত\n                                ২০১৯-২০ অর্থ-বছরে সম্ভব্যতা যাচাইয়ের মাধ্যমে\n                                www.uniontax.gov.bd নামক একটি অনলাইন সিস্টেম\n                                কার্যক্রম চালু করা হয়। সম্ভব্যতা যাচাইয়ের জন্য\n                                জিজ্ঞসাবাদের মাধ্যমকে সামনে রেখে প্রথমে একটি\n                                ইউনিয়নের সকল ওয়ার্ডের কিছু সংখ্যক মানুষকে দৈব\n                                চয়ন ভিত্তিতে চিহ্নিত করে ইউনিয়ন পরিষদ প্রদত্ত\n                                সেবাসমূহকে ডিজিটালাইজ করার সম্ভবনা যাচাই করা হয়।\n                                এই পদ্ধতিতে প্রাপ্ত তথ্যের আলোকে “ইউনিয়ন পরিষদ\n                                ডিজিটাল সেবা” নামক অনলাইন সফটওয়্যারটি তৈরী করা\n                                হয় এবং পরবর্তীতে ২০২০-২০২১ অর্থ বছরে ৩নং\n                                তেঁতুলিয়া ইউনিয়ন পরিষদে পাইলটিং হিসেবে চালু করার\n                                পর সকল ইউনিয়নে বাস্তবায়ন করা হলে আশাব্যঞ্জক সাড়া\n                                পাওয়া যায় এবং গত ০৫/১০/২০২১ তারিখে রংপুর বিভাগের\n                                মাননীয় বিভাগীয় কমিশনার জনাব মো: আব্দুল ওয়াহাব\n                                ভূঞা মহোদয় www.uniontax.gov.bd অনলাইন সিস্টেমটির\n                                শুভ উদ্বোধন করেন।\n                            ")])])]);
+  }, [_vm._v("\n                                ক্যাশলেস পৌর সেবা\n                            ")])]), _vm._v(" "), _c("div", {
+    staticClass: "col-md-12 d-none"
+  }, [_c("p", [_vm._v("\n                                পৌরসভা হল বাংলাদেশে পল্লী অঞ্চলের\n                                সর্বনিম্ন প্রশাসনিক একক। গ্রাম চৌকিদারি আইনের\n                                ১৮৭০ এর অধীনে পৌরসভার সৃষ্টি হয়। প্রাথমিক\n                                পর্যায়ে এর ভূমিকা নিরাপত্তামূলক কর্মকাণ্ডে\n                                সীমাবদ্ধ থাকলেও পরবর্তী কালে এটিই স্থানীয়\n                                সরকারের প্রাথমিক ইউনিটের ভিত্তিরুপে গড়ে উঠে।\n                                বর্তমানে ইউনিয়ন পরিষদ থেকে ট্রেড লাইসেন্স,\n                                চারিত্রিক সনদপত্র, ভূমিহীন সনদপত্র, ওয়ারিশান\n                                সনদপত্র, অবিবাহিত সনদপত্র, প্রত্যয়নপত্র,\n                                অস্বচ্ছল প্রত্যয়নপত্র, নাগরিক সনদপত্র,\n                                উত্তরাধিকার সনদপত্র ইত্যাদি সেবা প্রদান করা হয়।\n                                বহুল প্রচলিত এই সকল সেবাকে জনবান্ধব করার জন্য\n                                একটি ডিজিটাল প্লাটফর্ম অত্যাবশ্যকীয় হয়ে পড়ে। সে\n                                লক্ষ্যে পৌরসভা থেকে প্রদত্ত সেবাসমূহকে\n                                জনগণের কাছে স্বল্প খরচে, স্বল্প সময়ে এবং\n                                হয়রানিমুক্তভাবে প্রদান নিশ্চিত করার জন্য একটি\n                                এ্যাপ্লিকেশন থেকে সকল সেবা প্রদানের নিমিত্ত গত\n                                ২০১৯-২০ অর্থ-বছরে সম্ভব্যতা যাচাইয়ের মাধ্যমে\n                                www.uniontax.gov.bd নামক একটি অনলাইন সিস্টেম\n                                কার্যক্রম চালু করা হয়। সম্ভব্যতা যাচাইয়ের জন্য\n                                জিজ্ঞসাবাদের মাধ্যমকে সামনে রেখে প্রথমে একটি\n                                ইউনিয়নের সকল ওয়ার্ডের কিছু সংখ্যক মানুষকে দৈব\n                                চয়ন ভিত্তিতে চিহ্নিত করে পৌরসভা প্রদত্ত\n                                সেবাসমূহকে ডিজিটালাইজ করার সম্ভবনা যাচাই করা হয়।\n                                এই পদ্ধতিতে প্রাপ্ত তথ্যের আলোকে “পৌরসভা\n                                ডিজিটাল সেবা” নামক অনলাইন সফটওয়্যারটি তৈরী করা\n                                হয় এবং পরবর্তীতে ২০২০-২০২১ অর্থ বছরে ৩নং\n                                তেঁতুলিয়া পৌরসভাে পাইলটিং হিসেবে চালু করার\n                                পর সকল ইউনিয়নে বাস্তবায়ন করা হলে আশাব্যঞ্জক সাড়া\n                                পাওয়া যায় এবং গত ০৫/১০/২০২১ তারিখে রংপুর বিভাগের\n                                মাননীয় বিভাগীয় কমিশনার জনাব মো: আব্দুল ওয়াহাব\n                                ভূঞা মহোদয় www.uniontax.gov.bd অনলাইন সিস্টেমটির\n                                শুভ উদ্বোধন করেন।\n                            ")])])]);
 }];
 render._withStripped = true;
 
@@ -8815,7 +8796,7 @@ var render = function render() {
   }, [_vm.getType == "main" ? _c("img", {
     attrs: {
       width: "50%",
-      src: _vm.$asseturl + "assets/img/mail_logo-01.png",
+      src: _vm.$asseturl + "assets/img/pourologo-01.png",
       alt: ""
     }
   }) : _vm.getType == "Union" ? _c("img", {
@@ -8828,7 +8809,7 @@ var render = function render() {
     staticClass: "middleHeaderItem col-md-6 mb-3"
   }, [_c("h3", {
     staticClass: "searchHeader defaltColor"
-  }, [_vm._v("ইউনিয়ন নির্বাচন করুন ")]), _vm._v(" "), _c("union-select")], 1)])]), _vm._v(" "), _c("nav", {}, [_c("div", {
+  }, [_vm._v("পৌরসভা নির্বাচন করুন ")]), _vm._v(" "), _c("union-select")], 1)])]), _vm._v(" "), _c("nav", {}, [_c("div", {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col-md-12 pcnav",
@@ -8862,7 +8843,7 @@ var render = function render() {
         name: "upProfile"
       }
     }
-  }, [_vm._v("ইউপি সেবা পরিচিতি\n                                            ")])], 1), _vm._v(" "), _vm.getType == "main" ? _c("li", {
+  }, [_vm._v("পৌর সেবা পরিচিতি\n                                            ")])], 1), _vm._v(" "), _vm.getType == "main" ? _c("li", {
     staticClass: "nav-item dropdown"
   }, [_c("a", {
     staticClass: "nav-link dropdown-toggle",
@@ -8982,7 +8963,7 @@ var render = function render() {
       onmouseout: "this.start();",
       scrolldelay: "100"
     }
-  }, [_vm._v(" ইউনিয়ন পরিষদের ডিজিটাল অনলাইন সেবা সিস্টেম uniontax.gov.bd –তে আপনাকে স্বাগতম। ")]), _vm._v(" "), _vm._t("default"), _vm._v(" "), _vm._m(3)], 2), _vm._v(" "), _c("footer", [_c("div", {
+  }, [_vm._v("ক্যাশলেস পৌর সেবা সিস্টেমে pourotax.gov.bd –তে আপনাকে স্বাগতম। ")]), _vm._v(" "), _vm._t("default"), _vm._v(" "), _vm._m(3)], 2), _vm._v(" "), _c("footer", [_c("div", {
     staticClass: "footer_top_bg",
     staticStyle: {
       background: "url('/public/assets/img/footer_top_bg.png')",
@@ -9041,8 +9022,20 @@ var render = function render() {
       alt: ""
     }
   }), _vm._v(" "), _vm._m(6)])])])])]), _vm._v(" "), _c("div", {
-    staticClass: "footerpayment"
-  })])]), _vm._v(" "), _vm._m(7), _vm._v(" "), _c("b-modal", {
+    staticClass: "footerpayment row"
+  }, [_c("div", {
+    staticClass: "col-md-2"
+  }), _vm._v(" "), _c("div", {
+    staticClass: "col-md-8"
+  }, [_c("img", {
+    attrs: {
+      src: _vm.$asseturl + "assets/img/ekpay.png",
+      width: "100%",
+      alt: ""
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "col-md-2"
+  })])])]), _vm._v(" "), _vm._m(7), _vm._v(" "), _c("b-modal", {
     attrs: {
       id: _vm.actionModal.id,
       size: "xl",
@@ -9062,7 +9055,7 @@ var staticRenderFns = [function () {
 
   return _c("div", {
     staticClass: "topheaderItem col-md-6 col-6"
-  }, [_c("span", [_vm._v("ইউনিয়ন পরিষদ ক্যাশলেস সেবা সিস্টেমে স্বাগতম")])]);
+  }, [_c("span", [_vm._v("পৌরসভা ক্যাশলেস সেবা সিস্টেমে স্বাগতম")])]);
 }, function () {
   var _vm = this,
       _c = _vm._self._c;
@@ -9471,46 +9464,13 @@ var render = function render() {
     attrs: {
       value: ""
     }
-  }, [_vm._v("উপজেলা নির্বাচন করুন")]), _vm._v(" "), _vm._l(_vm.getthanas, function (thana) {
+  }, [_vm._v("পৌরসভা নির্বাচন করুন")]), _vm._v(" "), _vm._l(_vm.getthanas, function (thana) {
     return _c("option", {
       key: thana.id,
       domProps: {
-        value: thana.id
+        value: thana.url
       }
     }, [_vm._v(_vm._s(thana.bn_name))]);
-  })], 2), _vm._v(" "), _c("select", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.unioun,
-      expression: "unioun"
-    }],
-    staticClass: "searchFrom form-control",
-    attrs: {
-      id: "unioun"
-    },
-    on: {
-      change: [function ($event) {
-        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
-          return o.selected;
-        }).map(function (o) {
-          var val = "_value" in o ? o._value : o.value;
-          return val;
-        });
-        _vm.unioun = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
-      }, _vm.changeunioun]
-    }
-  }, [_c("option", {
-    attrs: {
-      value: ""
-    }
-  }, [_vm._v("ইউনিয়ন নির্বাচন করুন")]), _vm._v(" "), _vm._l(_vm.getuniouns, function (union) {
-    return _c("option", {
-      key: union.id,
-      domProps: {
-        value: union.url
-      }
-    }, [_vm._v(_vm._s(union.bn_name))]);
   })], 2)]);
 };
 
@@ -10186,7 +10146,8 @@ var staticRenderFns = [function () {
     staticClass: "col-md-12"
   }, [_c("h6", {
     staticClass: "serviceTitle position-relative"
-  }, [_vm._v("ইউপি সেবা পরিচিতি")])]), _vm._v(" "), _c("p", {
+  }, [_vm._v("পৌর সেবা পরিচিতি")])]), _vm._v(" "), _c("p", {
+    staticClass: "d-none",
     staticStyle: {
       padding: "2px 14px",
       "text-align": "justify"
@@ -10195,9 +10156,10 @@ var staticRenderFns = [function () {
     staticClass: "col-md-12"
   }, [_c("h6", {
     staticClass: "serviceTitle position-relative"
-  }, [_vm._v("ইউনিয়ন পরিষদ ডিজিটাল সেবা")])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("ক্যাশলেস পৌর সেবা")])]), _vm._v(" "), _c("div", {
     staticClass: "col-md-12"
   }, [_c("p", {
+    staticClass: "d-none",
     staticStyle: {
       "font-size": "14px",
       "line-height": "2",

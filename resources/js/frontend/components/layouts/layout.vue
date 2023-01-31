@@ -4,7 +4,7 @@
             <header>
                 <div class="topHeader">
                     <div class="row">
-                        <div class="topheaderItem col-md-6 col-6"><span>ইউনিয়ন পরিষদ ক্যাশলেস সেবা সিস্টেমে স্বাগতম</span></div>
+                        <div class="topheaderItem col-md-6 col-6"><span>পৌরসভা ক্যাশলেস সেবা সিস্টেমে স্বাগতম</span></div>
                         <div class="topheaderItem col-md-6 col-6 text-right"><span
                                 style="border-right: 1px solid #ffffff85; padding: 8px 10px;margin-right: 9px;">{{
                                         curentdate
@@ -20,12 +20,12 @@
                         <div class="middleHeaderItem col-md-6 mt-3 mb-3">
                             <router-link :to="{ name: 'home' }">
                                 <img width="50%" v-if="getType == 'main'"
-                                    :src="$asseturl + 'assets/img/mail_logo-01.png'" alt="">
+                                    :src="$asseturl + 'assets/img/pourologo-01.png'" alt="">
                                 <img width="50%" v-else-if="getType == 'Union'" :src="getunionInfos.web_logo" alt="">
                             </router-link>
                         </div>
                         <div class="middleHeaderItem col-md-6 mb-3">
-                            <h3 class="searchHeader defaltColor">ইউনিয়ন নির্বাচন করুন </h3>
+                            <h3 class="searchHeader defaltColor">পৌরসভা নির্বাচন করুন </h3>
                             <union-select />
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                                             <router-link class="nav-link" :to="{ name: 'home' }">হোম</router-link>
                                         </li>
                                         <li class="nav-item">
-                                            <router-link class="nav-link" :to="{ name: 'upProfile' }">ইউপি সেবা পরিচিতি
+                                            <router-link class="nav-link" :to="{ name: 'upProfile' }">পৌর সেবা পরিচিতি
                                             </router-link>
                                         </li>
 
@@ -161,7 +161,7 @@
                 <marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();" scrolldelay="100" style="background: var(--defaultColor);
 color: white;
 font-size: 18px;
-padding: 3px 11px;"> ইউনিয়ন পরিষদের ডিজিটাল অনলাইন সেবা সিস্টেম uniontax.gov.bd –তে আপনাকে স্বাগতম। </marquee>
+padding: 3px 11px;">ক্যাশলেস পৌর সেবা সিস্টেমে pourotax.gov.bd –তে আপনাকে স্বাগতম। </marquee>
                 <slot></slot>
                 <div class="row">
                     <div class="col-md-12 mt-3 mb-3">
@@ -295,8 +295,14 @@ padding: 3px 11px;"> ইউনিয়ন পরিষদের ডিজিটা
                         </div>
                 </div>
 
-                <div class="footerpayment">
-                    
+                <div class="footerpayment row ">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <img :src="$asseturl+'assets/img/ekpay.png'" width="100%" alt="">
+
+                    </div>
+                    <div class="col-md-2"></div>
+
                 </div>
 
 
