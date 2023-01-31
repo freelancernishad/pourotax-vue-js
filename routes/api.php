@@ -62,6 +62,7 @@ Route::post('nagorik/seba/insert',[SonodController::class, 'sonod_submit']);
 Route::get('/getdivisions', [countryApiController::class,'getdivisions']);
 Route::get('/getdistrict', [countryApiController::class,'getdistrict']);
 Route::get('/getthana', [countryApiController::class,'getthana']);
+Route::get('/getpourosova', [countryApiController::class,'getpourosova']);
 Route::get('/getunioun', [countryApiController::class,'getunioun']);
 Route::get('/gotoUnion', [countryApiController::class,'gotoUnion']);
 

@@ -70,7 +70,7 @@ export default {
         },
 
        async getthanaFun(){
-         var res = await this.callApi('get',`/api/getthana?id=${this.district}`,[]);
+         var res = await this.callApi('get',`/api/getpourosova?id=${this.district}`,[]);
          this.getthanas = res.data;
         },
 

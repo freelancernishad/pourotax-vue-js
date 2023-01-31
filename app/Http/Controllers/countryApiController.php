@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\PouroSova;
 use lemonpatwari\bangladeshgeocode\Models\Division;
 use lemonpatwari\bangladeshgeocode\Models\District;
 use lemonpatwari\bangladeshgeocode\Models\Thana;
@@ -67,6 +69,22 @@ class countryApiController extends Controller
         }
         return  cache()->remember('Thanas', 60*60*24, function () {
             return  Thana::all();
+        });
+
+    }
+
+    public function getpourosova(Request $r)
+    {
+        $id =  $r->id;
+
+        if($id){
+            return  cache()->remember('getpourosova-'.$id, 60*60*24, function () use($id) {
+                return  PouroSova::where('district_id',$id)->get();
+            });
+
+        }
+        return  cache()->remember('pourosovas', 60*60*24, function () {
+            return  PouroSova::all();
         });
 
     }

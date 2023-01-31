@@ -4156,7 +4156,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context3.prev = _context3.next) {
               case 0:
                 _context3.next = 2;
-                return _this3.callApi('get', "/api/getthana?id=".concat(_this3.district), []);
+                return _this3.callApi('get', "/api/getpourosova?id=".concat(_this3.district), []);
 
               case 2:
                 res = _context3.sent;
