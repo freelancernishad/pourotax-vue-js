@@ -19,7 +19,7 @@
                     <thead>
                         <tr>
                             <th>সনদ নাম্বার</th>
-                            <th>ইউনিয়ন</th>
+                            <th>পৌরসভা</th>
                             <th>নাম</th>
                             <th>পিতার/স্বামীর নাম</th>
                             <th>গ্রাম/মহল্লা</th>
@@ -80,7 +80,7 @@ export default {
     created() {
         this.fields =  [
                 { key: 'sonod_Id', label: 'সনদ নাম্বার', sortable: true },
-                { key: 'unioun_name', label: 'ইউনিয়ন', sortable: true },
+                { key: 'unioun_name', label: 'পৌরসভা', sortable: true },
                 { key: 'applicant_name', label: 'নাম', sortable: true },
                 { key: 'applicant_father_name', label: 'পিতার/স্বামীর নাম', sortable: true },
                 { key: 'applicant_present_village', label: 'গ্রাম/মহল্লা', sortable: true },
@@ -131,7 +131,7 @@ export default {
             fields: [
                 [
                 { key: 'sonod_Id', label: 'সনদ নাম্বার', sortable: true },
-                { key: 'unioun_name', label: 'ইউনিয়ন', sortable: true },
+                { key: 'unioun_name', label: 'পৌরসভা', sortable: true },
                 { key: 'applicant_name', label: 'নাম', sortable: true },
                 { key: 'applicant_father_name', label: 'পিতার/স্বামীর নাম', sortable: true },
                 { key: 'applicant_present_village', label: 'গ্রাম/মহল্লা', sortable: true },

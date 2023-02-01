@@ -60,7 +60,7 @@
                     <thead class="sonodThead">
                         <tr class="sonodTr">
                             <th class="sonodTh">সনদ নাম্বার</th>
-                            <!-- <th>ইউনিয়ন</th> -->
+                            <!-- <th>পৌরসভা</th> -->
                             <th class="sonodTh">নাম</th>
                             <th class="sonodTh">পিতার/স্বামীর নাম</th>
                             <th class="sonodTh">গ্রাম/মহল্লা</th>

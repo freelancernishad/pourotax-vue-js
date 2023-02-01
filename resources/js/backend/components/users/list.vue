@@ -27,7 +27,7 @@
 
                 <tr>
                     <th>নাম</th>
-                    <th>ইউনিয়ন</th>
+                    <th>পৌরসভা</th>
                     <th>উপজেলা</th>
                     <th>জেলা</th>
                     <th>পদবি</th>
@@ -100,7 +100,7 @@ export default {
             items: [],
             fields: [
                 { key: 'names', label: 'নাম', sortable: true },
-                { key: 'unioun', label: 'ইউনিয়ন', sortable: true },
+                { key: 'unioun', label: 'পৌরসভা', sortable: true },
                 { key: 'thana', label: 'উপজেলা', sortable: true },
                 { key: 'district', label: 'জেলা', sortable: true },
                 { key: 'position', label: 'পদবি', sortable: true },

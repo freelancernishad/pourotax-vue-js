@@ -1771,6 +1771,11 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
 
     public function userDocument(Request $request, $name, $id)
     {
+
+        ini_set('max_execution_time', '60000');
+        ini_set("pcre.backtrack_limit", "5000000000000000050000000000000000");
+        ini_set('memory_limit', '12008M');
+
         $row = Sonod::find($id);
         $sonod = Sonodnamelist::where('bnname', $row->sonod_name)->first();
         $uniouninfo = Uniouninfo::where('short_name_e', $row->unioun_name)->first();
@@ -2168,7 +2173,7 @@ if($row->unioun_name=='dhamor'){
 
             $ccc = '<img width="170px"  src="' . base64($row->chaireman_sign) . '"><br/>
                               <b><span style="color:'.$C_color.';font-size:'.$C_size.';">' . $row->chaireman_name . '</span> <br />
-                                      </b><span style="font-size:16px;">চেয়ারম্যান</span><br />';
+                                      </b><span style="font-size:16px;">মেয়র</span><br />';
 
 
 

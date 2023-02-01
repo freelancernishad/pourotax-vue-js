@@ -55,7 +55,7 @@
 
 <!--
         <div class="form-group col-md-6">
-          <label for="">ইউনিয়ন</label>
+          <label for="">পৌরসভা</label>
           <input type="text" class="form-control" v-model="form.unioun">
         </div> -->
 

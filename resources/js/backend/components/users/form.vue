@@ -28,7 +28,7 @@
             <option value="District_admin">জেলা এডমিন</option>
             <option value="Sub_District_admin">জেলা উপপরিচালক</option>
             <option value="Thana_admin">উপজেলা এডমিন</option>
-            <option value="Chairman">চেয়ারম্যান</option>
+            <option value="Chairman">মেয়র</option>
             <option value="Secretary">সচিব</option>
           </select>
 
@@ -66,7 +66,7 @@
 
 
         <div class="form-group col-md-6">
-          <label for="">ইউনিয়ন</label>
+          <label for="">পৌরসভা</label>
 
           <select v-model="form.unioun" class="form-control" required>
             <option value="">নির্বাচন করুন</option>
@@ -78,41 +78,41 @@
         </div>
 
         <!-- <div class="form-group col-md-6" v-if="form.thana=='পঞ্চগড় সদর'">
-          <label for="">ইউনিয়ন</label>
+          <label for="">পৌরসভা</label>
           <select v-model="form.unioun" class="form-control">
-            <option value="">ইউনিয়ন নির্বাচন করুন</option> <option>পঞ্চগড় সদর</option><option>সাতমেরা</option><option>অমরখানা</option><option>হাড়িভাসা</option><option>চাকলাহাট</option><option>হাফিজাবাদ</option><option>কামাত কাজল দীঘি</option><option>ধাক্কামারা</option><option>মাগুরা</option><option>গরিনাবাড়ী</option>
+            <option value="">পৌরসভা নির্বাচন করুন</option> <option>পঞ্চগড় সদর</option><option>সাতমেরা</option><option>অমরখানা</option><option>হাড়িভাসা</option><option>চাকলাহাট</option><option>হাফিজাবাদ</option><option>কামাত কাজল দীঘি</option><option>ধাক্কামারা</option><option>মাগুরা</option><option>গরিনাবাড়ী</option>
           </select>
         </div>
 
 
         <div class="form-group col-md-6" v-else-if="form.thana=='দেবীগঞ্জ'">
-          <label for="">ইউনিয়ন</label>
+          <label for="">পৌরসভা</label>
           <select v-model="form.unioun" class="form-control">
-            <option value="">ইউনিয়ন নির্বাচন করুন</option> <option>চিলাহাটি</option><option>শালডাঙ্গা</option><option>দেবীগঞ্জ সদর</option><option>পামুলী</option><option>সুন্দরদিঘী</option><option>সোনাহার মল্লিকাদহ</option><option>টেপ্রীগঞ্জ</option><option>দন্ডপাল</option><option>দেবীডুবা</option><option>চেংঠী হাজরা ডাঙ্গা</option>
+            <option value="">পৌরসভা নির্বাচন করুন</option> <option>চিলাহাটি</option><option>শালডাঙ্গা</option><option>দেবীগঞ্জ সদর</option><option>পামুলী</option><option>সুন্দরদিঘী</option><option>সোনাহার মল্লিকাদহ</option><option>টেপ্রীগঞ্জ</option><option>দন্ডপাল</option><option>দেবীডুবা</option><option>চেংঠী হাজরা ডাঙ্গা</option>
           </select>
         </div>
 
 
         <div class="form-group col-md-6" v-else-if="form.thana=='বোদা'">
-          <label for="">ইউনিয়ন</label>
+          <label for="">পৌরসভা</label>
           <select v-model="form.unioun" class="form-control">
-            <option value="">ইউনিয়ন নির্বাচন করুন</option> <option >ঝলইশাল শিরি</option><option >ময়দান দীঘি</option><option >বেংহারী</option><option >কাজলদীঘি কালিগঞ্জ</option><option >বড়শশী</option><option >চন্দনবাড়ী</option><option >মাড়েয়া বামনহাট</option><option >বোদা</option><option >সাকোয়া</option><option >পাচপীর</option>
+            <option value="">পৌরসভা নির্বাচন করুন</option> <option >ঝলইশাল শিরি</option><option >ময়দান দীঘি</option><option >বেংহারী</option><option >কাজলদীঘি কালিগঞ্জ</option><option >বড়শশী</option><option >চন্দনবাড়ী</option><option >মাড়েয়া বামনহাট</option><option >বোদা</option><option >সাকোয়া</option><option >পাচপীর</option>
           </select>
         </div>
 
 
         <div class="form-group col-md-6" v-else-if="form.thana=='আটোয়ারী'">
-          <label for="">ইউনিয়ন</label>
+          <label for="">পৌরসভা</label>
           <select v-model="form.unioun" class="form-control">
-            <option value="">ইউনিয়ন নির্বাচন করুন</option> <option>মির্জাপুর</option><option>রাধানগর</option><option>তোড়িয়া</option><option>বলরামপুর</option><option>আলোয়াখোয়া</option><option>ধামোর</option>
+            <option value="">পৌরসভা নির্বাচন করুন</option> <option>মির্জাপুর</option><option>রাধানগর</option><option>তোড়িয়া</option><option>বলরামপুর</option><option>আলোয়াখোয়া</option><option>ধামোর</option>
           </select>
         </div>
 
 
         <div class="form-group col-md-6" v-else-if="form.thana=='তেঁতুলিয়া'">
-          <label for="">ইউনিয়ন</label>
+          <label for="">পৌরসভা</label>
           <select v-model="form.unioun" class="form-control">
-            <option value="">ইউনিয়ন নির্বাচন করুন</option> <option>বাংলাবান্ধা</option><option>ভজনপুর</option><option>ভজনপুর</option><option>বুড়াবুড়ী</option><option>দেবনগর</option><option>শালবাহান</option><option>তেঁতুলিয়া</option><option>তিমাইহাট</option>
+            <option value="">পৌরসভা নির্বাচন করুন</option> <option>বাংলাবান্ধা</option><option>ভজনপুর</option><option>ভজনপুর</option><option>বুড়াবুড়ী</option><option>দেবনগর</option><option>শালবাহান</option><option>তেঁতুলিয়া</option><option>তিমাইহাট</option>
           </select>
         </div> -->
 

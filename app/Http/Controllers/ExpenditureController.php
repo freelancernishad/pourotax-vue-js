@@ -462,7 +462,7 @@ $buyBalance= 0;
                $html.=" <div class='signature text-center position-relative' style='color:{{ $color }}'>
                     <b><span style='color:$C_color;font-size:$C_size;'>$uniouninfo->c_name</span>
                         <br />
-                    </b><span style='font-size:16px;'>চেয়ারম্যান</span><br />
+                    </b><span style='font-size:16px;'>মেয়র</span><br />
                      $uniouninfo->full_name<br> $uniouninfo->thana , $uniouninfo->district ।
                 </div>
             </td>

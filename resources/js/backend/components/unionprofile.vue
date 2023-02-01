@@ -3,12 +3,12 @@
  <loader v-if="preLooding" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" name="circular"></loader>
 
 <div class="breadcrumbs-area">
-    <h3>ইউনিয়ন প্রোফাইল</h3>
+    <h3>পৌরসভা প্রোফাইল</h3>
     <ul>
         <li>
             <router-link :to="{name:'Dashboard'}">ড্যাশবোর্ড</router-link>
         </li>
-        <li>ইউনিয়ন প্রোফাইল</li>
+        <li>পৌরসভা প্রোফাইল</li>
     </ul>
 </div>
 
@@ -20,7 +20,7 @@
 
   <div class="col-md-6">
           <div class="form-group">
-              <label class="control-label col-form-label">ইউনিয়নের পুরো নাম</label>
+              <label class="control-label col-form-label">পৌরসভার পুরো নাম</label>
 
                   <input type="text" class="form-control" id="full_name" v-model="form.full_name"  />
 
@@ -31,7 +31,7 @@
 
           <div class="col-md-6">
           <div class="form-group">
-              <label class="control-label col-form-label">ইউনিয়নের সংক্ষিপ্ত নাম (বাংলা)</label>
+              <label class="control-label col-form-label">পৌরসভার সংক্ষিপ্ত নাম (বাংলা)</label>
 
                   <input type="text" class="form-control"  id="short_name_b" v-model="form.short_name_b"  />
 
@@ -61,7 +61,7 @@
 
           <div class="col-md-6">
           <div class="form-group">
-              <label class="control-label col-form-label">চেয়ারম্যানের নাম (বাংলা)</label>
+              <label class="control-label col-form-label">মেয়রের নাম (বাংলা)</label>
 
                   <input type="text" class="form-control"  id="c_name" v-model="form.c_name"  />
 
@@ -70,7 +70,7 @@
 
           <div class="col-md-6">
           <div class="form-group">
-              <label class="control-label col-form-label">চেয়ারম্যানের ইমেইল </label>
+              <label class="control-label col-form-label">মেয়রের ইমেইল </label>
 
                   <input type="email" class="form-control"  id="c_email" v-model="form.c_email"  />
 
@@ -80,7 +80,7 @@
 
           <div class="col-md-6">
             <div class="form-group">
-                <label class="control-label col-form-label">ইউনিয়নের কোড (English)</label>
+                <label class="control-label col-form-label">পৌরসভার কোড (English)</label>
 
                     <input type="text" class="form-control"  id="u_code" v-model="form.u_code"  />
 
@@ -90,7 +90,7 @@
 
           <div class="col-md-6">
           <div class="form-group">
-              <label class="control-label col-form-label">ইউনিয়নের বিবরন (বাংলা)</label>
+              <label class="control-label col-form-label">পৌরসভার বিবরন (বাংলা)</label>
 
               <textarea id="u_description" class="form-control" v-model="form.u_description" cols="30" rows="6" style="resize:none;height:120px"></textarea>
 
@@ -100,7 +100,7 @@
 
           <div class="col-md-6">
           <div class="form-group">
-              <label class="control-label col-form-label">ইউনিয়নের নোটিশ (বাংলা)</label>
+              <label class="control-label col-form-label">পৌরসভার নোটিশ (বাংলা)</label>
 
                   <textarea id="u_notice" class="form-control"  v-model="form.u_notice" cols="30" rows="6"  style="resize:none;height:120px" ></textarea>
 
@@ -110,7 +110,7 @@
 
           <div class="col-md-6">
           <div class="form-group">
-              <label class="control-label col-form-label">ইউনিয়নের ম্যাপ</label>
+              <label class="control-label col-form-label">পৌরসভার ম্যাপ</label>
 
                   <textarea id="u_notice" class="form-control"  v-model="form.google_map" cols="30" rows="6"  style="resize:none;height:120px" ></textarea>
 
@@ -120,7 +120,7 @@
 
           <div class="col-md-6">
           <div class="form-group">
-              <label class="control-label col-form-label">ইউনিয়নের কালার</label>
+              <label class="control-label col-form-label">পৌরসভার কালার</label>
 
                  <input type="color" id="head" v-model="form.defaultColor" class="form-control" >
           </div>
@@ -173,7 +173,7 @@
 
           <div class="col-md-6">
           <div class="form-group">
-              <label class="control-label col-form-label">চেয়ারম্যানের স্বাক্ষর
+              <label class="control-label col-form-label">মেয়রের স্বাক্ষর
               </label>
 
                   <input type="file" class="form-control" id="c_signture"  @change="FileSelected($event, 'c_signture')"  />
@@ -185,7 +185,7 @@
 
           <div class="col-md-6">
           <div class="form-group">
-              <label class="control-label col-form-label">ইউনিয়নের ছবি
+              <label class="control-label col-form-label">পৌরসভার ছবি
               </label>
 
                   <input type="file" class="form-control" id="u_image"  @change="FileSelected($event, 'u_image')"  />
@@ -300,7 +300,7 @@ export default {
 
             // conseole.log(res)
             this.getunionInfo();
-            Notification.customSuccess('ইউনিয়ন প্রোফাইল সফল ভাবে আপডেট হয়েছে');
+            Notification.customSuccess('পৌরসভা প্রোফাইল সফল ভাবে আপডেট হয়েছে');
             this.preLooding = false
 
 

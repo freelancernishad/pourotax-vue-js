@@ -13,8 +13,9 @@
                         <router-link :to="{ name: 'Dashboard' }" class="text-white">
 
                                 <span v-if="user.position=='District_admin'">জেলা এডমিন প্যানেল</span>
-                                <span v-if="user.position=='Sub_District_admin'">উপপরিচালক প্যানেল</span>
-                                <span v-else-if="user.position=='Chairman'">চেয়ারম্যান এডমিন প্যানেল</span>
+                                <span v-else-if="user.position=='super_admin'">সুপার এডমিন প্যানেল</span>
+                                <span v-else-if="user.position=='Sub_District_admin'">উপ-পরিচালক প্যানেল</span>
+                                <span v-else-if="user.position=='Chairman'">মেয়র এডমিন প্যানেল</span>
                                 <span v-else-if="user.position=='Secretary'">সচিব এডমিন প্যানেল</span>
                                 <span v-else>উপজেলা এডমিন প্যানেল</span>
 
@@ -65,8 +66,9 @@
 
 
                                 <span v-if="user.position=='District_admin'">জেলা প্রশাসক</span>
-                                <span v-if="user.position=='Sub_District_admin'">উপপরিচালক </span>
-                                <span v-else-if="user.position=='Chairman'">চেয়ারম্যান</span>
+                                <span v-else-if="user.position=='super_admin'">সুপার এডমিন </span>
+                                <span v-else-if="user.position=='Sub_District_admin'">উপপরিচালক </span>
+                                <span v-else-if="user.position=='Chairman'">মেয়র</span>
                                 <span v-else-if="user.position=='Secretary'">সচিব</span>
                                 <span v-else>উপজেলা নির্বাহী অফিসার</span>
 
@@ -198,7 +200,7 @@
                         <li class="nav-item" @click="submenu(0)"
                             v-if="Users.position == 'Chairman' || Users.position == 'Secretary'">
                             <router-link :to="{ name: 'unionprofile' }" class="nav-link"><i
-                                    class="flaticon-dashboard"></i><span>ইউনিয়ন প্রোফাইল</span></router-link>
+                                    class="flaticon-dashboard"></i><span>পৌরসভা প্রোফাইল</span></router-link>
                         </li>
 
 
@@ -231,7 +233,7 @@
                         <li class="nav-item" @click="submenu(0)"
                             v-if="Users.position == 'super_admin'">
                             <router-link :to="{ name: 'unionlist' }" class="nav-link"><i
-                                    class="flaticon-dashboard"></i><span>ইউনিয়ন এর তালিকা</span></router-link>
+                                    class="flaticon-dashboard"></i><span>পৌরসভা এর তালিকা</span></router-link>
                         </li>
 
 

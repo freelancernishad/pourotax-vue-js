@@ -20,7 +20,7 @@
 
                             <div class="form-group col-md-3" v-if="$localStorage.getItem('position')=='District_admin' || $localStorage.getItem('position')=='Thana_admin' || $localStorage.getItem('position')=='Sub_District_admin'">
                                 <select v-model="form.union" id="sonod" class="form-control" required>
-                                    <option value="">ইউনিয়ন নির্বাচন করুন</option>
+                                    <option value="">পৌরসভা নির্বাচন করুন</option>
 
                                     <!-- <option v-if="$localStorage.getItem('position')=='District_admin'" value="all">সকল প্রতিবেদন</option> -->
 
