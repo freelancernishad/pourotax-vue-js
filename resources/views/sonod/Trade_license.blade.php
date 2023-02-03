@@ -34,6 +34,11 @@
         <tr>
         <td width="30%">ঠিকানা</td><td>: {{ $row->applicant_present_village }}, {{ $row->applicant_present_post_office }}, {{ $row->applicant_present_Upazila }}, {{ $row->applicant_present_district }}</td>
         </tr>
+        @if($row->applicant_holding_tax_number)
+        <tr>
+       <td width="30%">হোল্ডিং নং</td><td>: {{ int_en_to_bn($row->applicant_holding_tax_number) }}</td>
+       </tr>
+       @endif
         {{-- <tr>
         <td width="30%">পেশার ধরন</td><td>: {{ $row->applicant_occupation }}</td>
         </tr> --}}
