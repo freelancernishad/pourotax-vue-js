@@ -606,7 +606,7 @@ class HoldingtaxController extends Controller
                     তারিখ: ".int_en_to_bn($created_at)."
                     </p>
 
-                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি চেয়ারম্যানের স্বাক্ষর</p>
+                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি মেয়রের স্বাক্ষর</p>
                 </div>
             </div>
         </div>
@@ -773,7 +773,7 @@ class HoldingtaxController extends Controller
                     তারিখ: ".int_en_to_bn($created_at)."
                     </p>
 
-                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি চেয়ারম্যানের স্বাক্ষর</p>
+                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি মেয়রের স্বাক্ষর</p>
                 </div>
             </div>
         </div>

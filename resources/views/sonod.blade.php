@@ -46,7 +46,7 @@
                     </td>
                     <td style="text-align: center;" width="50%">
                         <p style="font-size:20px">গণপ্রজাতন্ত্রী বাংলাদেশ</p>
-                        <p style="font-size:25px">চেয়ারম্যানের কার্যালয়</p>
+                        <p style="font-size:25px">মেয়রের কার্যালয়</p>
                     </td>
                     <td>
                     </td>
@@ -213,7 +213,7 @@
                   <p style="background: #787878;
   color: white;
   text-align: center;
-  padding: 2px 2px;font-size: 16px;     margin-top: 0px;" class="m-0">"সময়মত ইউনিয়ন কর পরিশোধ করুন। ইউনিয়নের উন্নয়নমূলক কাজে সহায়তা করুন"</p>
+  padding: 2px 2px;font-size: 16px;     margin-top: 0px;" class="m-0">"সময়মত পৌরসভা কর পরিশোধ করুন। পৌরসভার উন্নয়নমূলক কাজে সহায়তা করুন"</p>
                   <p class="m-0" style="font-size:14px;text-align:center">ইস্যুকৃত সনদটি যাচাই করতে QR কোড স্ক্যান করুন অথবা ভিজিট করুন {{ $uniouninfo->domain }}</p>
             </div>
         </div>

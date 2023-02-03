@@ -33,7 +33,7 @@
         background: green;
         padding: 13px 39px;
         border-radius: 14px;width: 200px;
-    margin: 0 auto;" >অভিনন্দন !</div>  <br> <p style="font:size:16px;color:blue;margin-bottom:0px !important;">ডিজিটাল ইউনিয়ন ট্যাক্স ও সেবা সিস্টেমে আপনার আবেদনটি যথাযথভাবে দাখিল হয়েছে।</p>
+    margin: 0 auto;" >অভিনন্দন !</div>  <br> <p style="font:size:16px;color:blue;margin-bottom:0px !important;">ডিজিটাল পৌরসভা ট্যাক্স ও সেবা সিস্টেমে আপনার আবেদনটি যথাযথভাবে দাখিল হয়েছে।</p>
 
     </div>
 
@@ -160,9 +160,9 @@
 <p style="background: #787878;
     color: white;
     text-align: center;
-    padding: 2px 2px;font-size: 16px;     margin-top: 20px;margin-bottom:0px" class="m-0">"সময়মত ইউনিয়ন কর পরিশোধ করুন। ইউনিয়নের উন্নয়নমূলক কাজে সহায়তা করুন"</p>
+    padding: 2px 2px;font-size: 16px;     margin-top: 20px;margin-bottom:0px" class="m-0">"সময়মত পৌরসভা কর পরিশোধ করুন। পৌরসভার উন্নয়নমূলক কাজে সহায়তা করুন"</p>
 
-<p class="m-0" style="font-size:14px;text-align:center;margin: 0;">'ডিজিটাল ইউনিয়ন ট্যাক্স ও সেবা সিস্টেম' {{ $uniouninfo->domain }} এর সাথে থাকার জন্য ধন্যবাদ</p>
+<p class="m-0" style="font-size:14px;text-align:center;margin: 0;">'ডিজিটাল পৌরসভা ট্যাক্স ও সেবা সিস্টেম' {{ $uniouninfo->domain }} এর সাথে থাকার জন্য ধন্যবাদ</p>
 
     {{-- <p style="text-align: center"> {{ $uniouninfo->domain }}</p> --}}
 

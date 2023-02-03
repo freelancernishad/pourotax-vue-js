@@ -42,7 +42,7 @@
             </td>
             <td style="text-align: center;" width="50%">
                 <p style="font-size:20px">গণপ্রজাতন্ত্রী বাংলাদেশ</p>
-                <p style="font-size:25px">চেয়ারম্যানের কার্যালয়</p>
+                <p style="font-size:25px">মেয়রের কার্যালয়</p>
             </td>
             <td>
             </td>
@@ -51,7 +51,7 @@
             <td>
             </td>
             <td style="margin-top:0px; margin-bottom:0px; text-align: center;">
-                <h1 style="color: #7230A0; margin: 0px; font-size: 28px">সকল ইউনিয়ন এর প্রতিবেদন</h3>
+                <h1 style="color: #7230A0; margin: 0px; font-size: 28px">সকল পৌরসভা এর প্রতিবেদন</h3>
             </td>
             <td>
             </td>
@@ -88,7 +88,7 @@
             </td>
             <td style="text-align: center;" width="50%">
                 <p style="font-size:20px">গণপ্রজাতন্ত্রী বাংলাদেশ</p>
-                <p style="font-size:25px">চেয়ারম্যানের কার্যালয়</p>
+                <p style="font-size:25px">মেয়রের কার্যালয়</p>
             </td>
             <td>
             </td>

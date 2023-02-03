@@ -299,7 +299,7 @@ if($payment->status=='Paid'){
             $stutus = $sonod->stutus;
             $payment_status = $sonod->payment_status;
             if ($stutus != 'approved') {
-                return "আপনার অনুসন্ধানকৃত সনদ/প্রত্যয়নপত্র অত্র ইউনিয়ন পরিষদ থেকে এখনও অনুমোদন করা হয়নি।";
+                return "আপনার অনুসন্ধানকৃত সনদ/প্রত্যয়নপত্র অত্র পৌরসভা থেকে এখনও অনুমোদন করা হয়নি।";
             }
             if ($payment_status != 'Unpaid' && $stutus == 'approved') {
                 return redirect("/sonod/$sonod->sonod_name/$id");
@@ -1553,7 +1553,7 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
                     তারিখ: ".int_en_to_bn($created_at)."
                     </p>
 
-                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি চেয়ারম্যানের স্বাক্ষর</p>
+                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি মেয়রের স্বাক্ষর</p>
                 </div>
             </div>
         </div>
@@ -1734,7 +1734,7 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
                     তারিখ: ".int_en_to_bn($created_at)."
                     </p>
 
-                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি চেয়ারম্যানের স্বাক্ষর</p>
+                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি মেয়রের স্বাক্ষর</p>
                 </div>
             </div>
         </div>
@@ -2116,7 +2116,7 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
                       </td>
                       <td style="text-align: center;" width="50%">
                           <p style="font-size:20px">গণপ্রজাতন্ত্রী বাংলাদেশ</p>
-                          <p style="font-size:25px">চেয়ারম্যানের কার্যালয়</p>
+                          <p style="font-size:25px">মেয়রের কার্যালয়</p>
 
                       </td>
                       <td>
@@ -2210,7 +2210,7 @@ if($row->unioun_name=='dhamor'){
                             <p style="background: #787878;
             color: white;
             text-align: center;
-            padding: 2px 2px;font-size: 16px;     margin-top: 0px;" class="m-0">"সময়মত ইউনিয়ন কর পরিশোধ করুন। ইউনিয়নের উন্নয়নমূক কাজে সহায়তা করুন"</p>
+            padding: 2px 2px;font-size: 16px;     margin-top: 0px;" class="m-0">"সময়মত পৌরসভা কর পরিশোধ করুন। পৌরসভার উন্নয়নমূক কাজে সহায়তা করুন"</p>
                             <p class="m-0" style="font-size:14px;text-align:center">ইস্যুকৃত সনদটি যাচাই করতে QR কোড স্ক্যান করুন অথবা ভিজিট করুন ' . $uniouninfo->domain . '</p>
                       </div>
                   </div>
@@ -2264,7 +2264,7 @@ $nagoriinfo = '';
 
 if ($sonod_name == 'ওয়ারিশান সনদ') {
         $nagoriinfo .= '
-            <p style="margin-top:0px;margin-bottom:5px;font-size:15px;text-align:justify">&nbsp; &nbsp; &nbsp; এই মর্মে প্রত্যয়ন করা যাচ্ছে যে, মরহুম ' . $row->utname . ', পিতা/স্বামী- ' . $row->ut_father_name . ', মাতা- ' . $row->ut_mother_name . ', গ্রাম- ' . $row->ut_grame . ', ডাকঘর- ' . $row->ut_post . ', উপজেলা: ' . $row->ut_thana . ', জেলা- ' . $row->ut_district . '। তিনি অত্র ইউনিয়নের '.int_en_to_bn($row->ut_word).' নং ওয়ার্ডের '.$row->applicant_resident_status.' বাসিন্দা ছিলেন। মৃত্যুকালে তিনি নিম্নোক্ত ওয়ারিশগণ রেখে যান। নিম্নে তাঁর ওয়ারিশ/ওয়ারিশগণের নাম ও সম্পর্ক উল্লেখ করা হলো।<br>
+            <p style="margin-top:0px;margin-bottom:5px;font-size:15px;text-align:justify">&nbsp; &nbsp; &nbsp; এই মর্মে প্রত্যয়ন করা যাচ্ছে যে, মরহুম ' . $row->utname . ', পিতা/স্বামী- ' . $row->ut_father_name . ', মাতা- ' . $row->ut_mother_name . ', গ্রাম- ' . $row->ut_grame . ', ডাকঘর- ' . $row->ut_post . ', উপজেলা: ' . $row->ut_thana . ', জেলা- ' . $row->ut_district . '। তিনি অত্র পৌরসভার '.int_en_to_bn($row->ut_word).' নং ওয়ার্ডের '.$row->applicant_resident_status.' বাসিন্দা ছিলেন। মৃত্যুকালে তিনি নিম্নোক্ত ওয়ারিশগণ রেখে যান। নিম্নে তাঁর ওয়ারিশ/ওয়ারিশগণের নাম ও সম্পর্ক উল্লেখ করা হলো।<br>
             <br>
 
             &nbsp; &nbsp; &nbsp; আমি মরহুমের বিদেহী আত্মার মাগফেরাত কামনা করি।
@@ -2272,7 +2272,7 @@ if ($sonod_name == 'ওয়ারিশান সনদ') {
             } else {
 
             $nagoriinfo .= '
-            <p style="margin-top:0px;margin-bottom:5px;font-size:15px;text-align:justify">&nbsp; &nbsp; &nbsp; এই মর্মে প্রত্যয়ন করা যাচ্ছে যে, জনাব ' . $row->utname . ', পিতা/স্বামী- ' . $row->ut_father_name . ', মাতা- ' . $row->ut_mother_name . ', গ্রাম- ' . $row->ut_grame . ', ডাকঘর- ' . $row->ut_post . ', উপজেলা: ' . $row->ut_thana . ', জেলা- ' . $row->ut_district . '। তিনি অত্র ইউনিয়নের '.int_en_to_bn($row->ut_word).' নং ওয়ার্ডের '.$row->applicant_resident_status.' বাসিন্দা। নিম্নে তাঁর উত্তরাধিকারী/উত্তরাধিকারীগণের নাম ও সম্পর্ক উল্লেখ করা হলো।<br>
+            <p style="margin-top:0px;margin-bottom:5px;font-size:15px;text-align:justify">&nbsp; &nbsp; &nbsp; এই মর্মে প্রত্যয়ন করা যাচ্ছে যে, জনাব ' . $row->utname . ', পিতা/স্বামী- ' . $row->ut_father_name . ', মাতা- ' . $row->ut_mother_name . ', গ্রাম- ' . $row->ut_grame . ', ডাকঘর- ' . $row->ut_post . ', উপজেলা: ' . $row->ut_thana . ', জেলা- ' . $row->ut_district . '। তিনি অত্র পৌরসভার '.int_en_to_bn($row->ut_word).' নং ওয়ার্ডের '.$row->applicant_resident_status.' বাসিন্দা। নিম্নে তাঁর উত্তরাধিকারী/উত্তরাধিকারীগণের নাম ও সম্পর্ক উল্লেখ করা হলো।<br>
             <br>
 
 

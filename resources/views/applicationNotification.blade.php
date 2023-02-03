@@ -9,7 +9,7 @@
 
         <meta charset="UTF-8">
 
-        <title>:: ইউনিয়ন পরিষদ ডিজিটাল সেবা সিস্টেম ::</title>
+        <title>:: পৌরসভা ডিজিটাল সেবা সিস্টেম ::</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
 
