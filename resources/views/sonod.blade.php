@@ -25,7 +25,7 @@
                 <tr>
                     <td style="text-align: center;" width="20%">
                     <span style="color:#b400ff;"><b>
-                    উন্নয়নের গণতন্ত্র,  <br /> শেখ হাসিনার মূলমন্ত্র </b>
+                    শেখ হাসিনার মূলনিতি <br /> গ্রাম শহরের উন্নতি </b>
                     </span>
                     </td>
                     <td style="text-align: center;" width="20%">
