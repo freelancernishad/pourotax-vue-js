@@ -2098,7 +2098,7 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
                   <tr>
                       <td style="text-align: center;" width="20%">
 					  <span style="color:#b400ff;"><b>
-					  শেখ হাসিনার মূলনিতি <br/> গ্রাম শহরের উন্নতি </b>
+					  শেখ হাসিনার মূলনীতি <br /> গ্রাম শহরের উন্নতি </b>
 
 					  </span>
                       </td>

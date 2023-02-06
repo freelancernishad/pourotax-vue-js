@@ -168,7 +168,7 @@ export default {
         // this.getunionInfo();
         if (this.Details.sonod_name == 'নাগরিকত্ব সনদ') {
             this.readonly = true
-            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভারর স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে কোন রাষ্ট্রদ্রোহিতার অভিযোগ নেই। তাই তাকে ${this.Details.sonod_name} প্রদান করা হলো ।`;
+            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে কোন রাষ্ট্রদ্রোহিতার অভিযোগ নেই। তাই তাকে ${this.Details.sonod_name} প্রদান করা হলো ।`;
         } else if (this.Details.sonod_name == 'ট্রেড লাইসেন্স') {
              this.readonly = false
         } else if (this.Details.sonod_name == 'ওয়ারিশান সনদ') {
@@ -177,7 +177,7 @@ export default {
              this.readonly = true
         } else if (this.Details.sonod_name == 'বিবিধ প্রত্যয়নপত্র') {
              this.readonly = false
-            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভারর স্থায়ী বাসিন্দা। ${this.sonodlist.prottoyon}`;
+            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। ${this.sonodlist.prottoyon}`;
 
 
         } else if (this.Details.sonod_name == 'চারিত্রিক সনদ') {
@@ -252,7 +252,7 @@ export default {
             this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সম্প্রদায় নিয়ে লেখাগুলো এখানে হবে । সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে রাষ্ট্রদ্রোহিতার অভিযোগ নেই।`;
         } else if (this.Details.sonod_name == 'আর্থিক অস্বচ্ছলতার সনদপত্র') {
              this.readonly = true
-            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে আমার ইউনিয়নের স্থায়ী বাসিন্দা এবং সে আর্থিকভাবে খুবি অসচ্ছল । সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে রাষ্ট্রদ্রোহিতার অভিযোগ নেই।`;
+            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে আমার পৌরসভার স্থায়ী বাসিন্দা এবং সে আর্থিকভাবে খুবি অসচ্ছল । সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে রাষ্ট্রদ্রোহিতার অভিযোগ নেই।`;
         } else if (this.Details.sonod_name == 'জীবিত ব্যক্তির ওয়ারিশ সনদ') {
              this.readonly = true
             this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে কোন রাষ্ট্রদ্রোহিতার অভিযোগ নেই। তাই তাকে ${this.Details.sonod_name} প্রদান করা হলো ।`;
