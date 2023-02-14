@@ -33,7 +33,7 @@
         background: green;
         padding: 13px 39px;
         border-radius: 14px;width: 200px;
-    margin: 0 auto;" >অভিনন্দন !</div>  <br> <p style="font:size:16px;color:blue;margin-bottom:0px !important;">ডিজিটাল ইউনিয়ন ট্যাক্স ও সেবা সিস্টেমে আপনার আবেদনটি যথাযথভাবে দাখিল হয়েছে।</p>
+    margin: 0 auto;" >অভিনন্দন !</div>  <br> <p style="font:size:16px;color:blue;margin-bottom:0px !important;">পৌরসভা ক্যাশলেস সেবা সিস্টেমে আপনার আবেদনটি যথাযথভাবে দাখিল হয়েছে।</p>
 
     </div>
 
@@ -196,7 +196,7 @@
         <table></table>
 
 
-        <p style="margin: 0;"><b>ইউপি সদস্যের মন্তব্য/সুপারিশ:</b></p>
+        <p style="margin: 0;"><b>পৌরসভা সদস্যের মন্তব্য/সুপারিশ:</b></p>
         @if($row->sonod_name=='উত্তরাধিকারী সনদ')
         <p style="margin: 0;">সরেজমিন তদন্ত পূর্বক বর্ণিত ব্যক্তির উল্লিখিত উত্তরাধিকারী/উত্তরাধিকারীগণ ছাড়া আর অন্য কোন উত্তরাধিকারী নেই। ইহা আমার জানা মতে সত্য।</p>
         <p style="margin: 0;">** অন্য কোন উত্তরাধিকারী থাকলে তার বিবরণ উল্লেখ করুন (প্রযোজ্য ক্ষেত্রে):</p>
@@ -213,7 +213,7 @@
             <td  style="text-align: center;" width="40%">
                 <div class="signature text-center position-relative">
                     {{-- <img width="170px"  src="{{ base64($row->chaireman_sign) }}"><br/> --}}
-                    <b><span style="color:#7230A0;font-size:18px;">সংশ্লিষ্ট ইউপি সদস্যের স্বাক্ষর ও সীল</span> <br />
+                    <b><span style="color:#7230A0;font-size:18px;">সংশ্লিষ্ট পৌরসভা সদস্যের স্বাক্ষর ও সীল</span> <br />
 
 
 
