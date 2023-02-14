@@ -1383,7 +1383,7 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
 
 
 
-            <p class='defalttext'>ইউপি ফরম-১০</p>
+            <p class='defalttext'>পৌরসভা ফরম-১০</p>
             <h2 style='font-weight: 500;' class='companiname'>$full_name</h2>
             <p class='defalttext'>উপজেলা: $thana, জেলা: $district  </p>
             <h2 class='companiname' style='  color: #410fcc;'>ট্যাক্স, রেট ও বিবিধ প্রাপ্তি আদায় রশিদ </h2>";
@@ -1548,12 +1548,12 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
                     </div>
                 </div>
                 <div class='memofooter' style='margin-top:25px'>
-                    <p style='float:left;width:30%;padding:10px 15px' class='defaltfont'>ইউপি সচিব/আদায়কারীর স্বাক্ষর
+                    <p style='float:left;width:30%;padding:10px 15px' class='defaltfont'>পৌরসভা সচিব/আদায়কারীর স্বাক্ষর
                     </br>
                     তারিখ: ".int_en_to_bn($created_at)."
                     </p>
 
-                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি মেয়রের স্বাক্ষর</p>
+                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>পৌরসভা মেয়রের স্বাক্ষর</p>
                 </div>
             </div>
         </div>
@@ -1568,7 +1568,7 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
 
 
 
-            <p class='defalttext'>ইউপি ফরম-১০</p>
+            <p class='defalttext'>পৌরসভা ফরম-১০</p>
             <h2 style='font-weight: 500;' class='companiname'>$full_name</h2>
             <p class='defalttext'>উপজেলা: $thana, জেলা: $district  </p>
             <h2 class='companiname'  style='  color: #410fcc;'>ট্যাক্স, রেট ও বিবিধ প্রাপ্তি আদায় রশিদ </h2>";
@@ -1729,12 +1729,12 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
                     </div>
                 </div>
                 <div class='memofooter' style='margin-top:25px'>
-                    <p style='float:left;width:30%;padding:10px 15px' class='defaltfont'>ইউপি সচিব/আদায়কারীর স্বাক্ষর
+                    <p style='float:left;width:30%;padding:10px 15px' class='defaltfont'>পৌরসভা সচিব/আদায়কারীর স্বাক্ষর
                     </br>
                     তারিখ: ".int_en_to_bn($created_at)."
                     </p>
 
-                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি মেয়রের স্বাক্ষর</p>
+                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>পৌরসভা মেয়রের স্বাক্ষর</p>
                 </div>
             </div>
         </div>
@@ -2339,7 +2339,7 @@ if ($sonod_name == 'ওয়ারিশান সনদ') {
 </p><br>
 
 <p style="margin-top:-10px;margin-bottom:5px">
-সংশ্লিষ্ট ওয়ার্ডের ইউপি সদস্য কর্তৃক আবেদনকারীর দাখিলকৃত তথ্য যাচাই/সত্যায়নের পরিপ্রেক্ষিতে অত্র সনদপত্র প্রদান করা হলো।
+সংশ্লিষ্ট ওয়ার্ডের পৌরসভা সদস্য কর্তৃক আবেদনকারীর দাখিলকৃত তথ্য যাচাই/সত্যায়নের পরিপ্রেক্ষিতে অত্র সনদপত্র প্রদান করা হলো।
 </p> <br/>
 <p style="margin-top:-10px; margin-bottom:0px">
 &nbsp; &nbsp; &nbsp; আমি তাঁর/তাঁদের সর্বাঙ্গীন উন্নতি ও মঙ্গল কামনা করছি।
