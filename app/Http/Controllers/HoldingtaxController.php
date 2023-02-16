@@ -454,7 +454,7 @@ class HoldingtaxController extends Controller
 
 
 
-            <p class='defalttext'>ইউপি ফরম-১০</p>
+            <p class='defalttext'>পৌরসভা ফরম-১০</p>
             <h2 style='font-weight: 500;' class='companiname'>$full_name</h2>
             <p class='defalttext'>উপজেলা: $thana, জেলা: $district  </p>
             <h2 class='companiname' style='  color: #410fcc;'>ট্যাক্স, রেট ও বিবিধ প্রাপ্তি আদায় রশিদ </h2>";
@@ -601,12 +601,12 @@ class HoldingtaxController extends Controller
                     </div>
                 </div>
                 <div class='memofooter' style='margin-top:25px'>
-                    <p style='float:left;width:30%;padding:10px 15px' class='defaltfont'>ইউপি সচিব/আদায়কারীর স্বাক্ষর
+                    <p style='float:left;width:30%;padding:10px 15px' class='defaltfont'>পৌরসভা সচিব/আদায়কারীর স্বাক্ষর
                     </br>
                     তারিখ: ".int_en_to_bn($created_at)."
                     </p>
 
-                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি মেয়রের স্বাক্ষর</p>
+                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>পৌরসভা মেয়রের স্বাক্ষর</p>
                 </div>
             </div>
         </div>
@@ -621,7 +621,7 @@ class HoldingtaxController extends Controller
 
 
 
-            <p class='defalttext'>ইউপি ফরম-১০</p>
+            <p class='defalttext'>পৌরসভা ফরম-১০</p>
             <h2 style='font-weight: 500;' class='companiname'>$full_name</h2>
             <p class='defalttext'>উপজেলা: $thana, জেলা: $district  </p>
             <h2 class='companiname'  style='  color: #410fcc;'>ট্যাক্স, রেট ও বিবিধ প্রাপ্তি আদায় রশিদ </h2>";
@@ -768,12 +768,12 @@ class HoldingtaxController extends Controller
                     </div>
                 </div>
                 <div class='memofooter' style='margin-top:25px'>
-                    <p style='float:left;width:30%;padding:10px 15px' class='defaltfont'>ইউপি সচিব/আদায়কারীর স্বাক্ষর
+                    <p style='float:left;width:30%;padding:10px 15px' class='defaltfont'>পৌরসভা সচিব/আদায়কারীর স্বাক্ষর
                     </br>
                     তারিখ: ".int_en_to_bn($created_at)."
                     </p>
 
-                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>ইউপি মেয়রের স্বাক্ষর</p>
+                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>পৌরসভা মেয়রের স্বাক্ষর</p>
                 </div>
             </div>
         </div>
