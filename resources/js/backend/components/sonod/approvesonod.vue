@@ -177,7 +177,7 @@ export default {
              this.readonly = true
         } else if (this.Details.sonod_name == 'বিবিধ প্রত্যয়নপত্র') {
              this.readonly = false
-            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। ${this.sonodlist.prottoyon}`;
+            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। ${this.Details.prottoyon}`;
 
 
         } else if (this.Details.sonod_name == 'চারিত্রিক সনদ') {
@@ -190,16 +190,32 @@ export default {
              this.readonly = true
             this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। আমার জানা মতে সে ${this.Details.family_name} বংশের একজন উত্তরাধিকারী । সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে রাষ্ট্রদ্রোহিতার অভিযোগ নেই।`;
         } else if (this.Details.sonod_name == 'অবিবাহিত সনদ') {
-
-
-
-
              this.readonly = true
             this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। আমার জানামতে সে একজন অবিবাহিত ${this.Details.applicant_gender} । বিগত সময়ে তার কোন বিবাহ ছিলনা বা বিবাহ করেনি । সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে রাষ্ট্রদ্রোহিতার অভিযোগ নেই ।`;
-        } else if (this.Details.sonod_name == 'পুনঃ বিবাহ না হওয়া সনদ') {
+        } else if (this.Details.sonod_name == 'বিবাহিত সনদ') {
+             this.readonly = true
+            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। আমার জানামতে সে একজন বিবাহিত ${this.Details.applicant_gender} । সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে রাষ্ট্রদ্রোহিতার অভিযোগ নেই ।`;
+        } else if (this.Details.sonod_name == 'দ্বিতীয় বিবাহের অনুমতি পত্র') {
+
              this.readonly = true
 
+             var customtext1 = 'স্ত্রী';
+             var customtext2 = 'স্বামী';
+            if(this.Details.applicant_gender=='পুরুষ'){
+                 customtext1 = 'স্ত্রী';
+                 customtext2 = 'স্বামী';
+            }else{
+                 customtext1 = 'স্বামী';
+                 customtext2 = 'স্ত্রী';
+            }
 
+
+
+            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। আমার জানামতে সে একজন বিবাহিত ${this.Details.applicant_gender} । তাঁর ${customtext1} এর আবেদনের বর্ণনা মোতাবেক সে স্বেচ্ছায় তাঁর ${customtext2}কে দ্বিতীয় বিবাহ করার জন্য অনুমতি প্রদান করেন এবং সংশ্লিষ্ট ওয়ার্ড কাউন্সিলর সুপারিশ করেন। `;
+
+
+        } else if (this.Details.sonod_name == 'পুনঃ বিবাহ না হওয়া সনদ') {
+             this.readonly = true
 
             this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে একজন বিবাহিত ${this.Details.applicant_gender} এবং তাহার কোনো পুনঃ বিবাহ হয়নি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে রাষ্ট্রদ্রোহিতার অভিযোগ নেই।`;
         } else if (this.Details.sonod_name == 'বার্ষিক আয়ের প্রত্যয়ন') {
@@ -233,9 +249,9 @@ export default {
         } else if (this.Details.sonod_name == 'প্রত্যয়নপত্র') {
              this.readonly = false
             this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে রাষ্ট্রদ্রোহিতার অভিযোগ নেই। তাকে ${this.Details.The_subject_of_the_certificate} অনুমতি দেওয়া হল ।`;
-        } else if (this.Details.sonod_name == 'ভোটার এলাকা স্থানান্তর অনাপত্তি পত্র') {
+        } else if (this.Details.sonod_name == 'ভোটার স্থানান্তরের প্রত্যয়ন পত্র') {
              this.readonly = true
-            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি।  বর্তমানে তার স্থায়ী কমস্থল স্থানান্তরিত হয়েছে । তার স্থায়ী কর্মস্থান এখন ${this.Details.Name_of_the_transferred_area} । তার দৈনন্দিন সকল কার্যক্রম সুন্দরভাবে পরিচালনার জন্য ভোটার এলাকা পরিবর্তন করা খুবই জরুরী। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে রাষ্ট্রদ্রোহিতার অভিযোগ নেই।`;
+            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে, তিনি ${this.Details.applicant_present_village}, ${this.Details.applicant_present_post_office}, ${this.Details.applicant_present_Upazila}, ${this.Details.applicant_present_district}-এ ভোটার হয়েছেন। বর্তমানে তিনি ${this.Details.Name_of_the_transferred_area}-এ স্থায়ীভাবে বসবাস করায় তাঁর ভোটার স্তানান্তর করার সুপারিশ করছি।`;
 
 
         } else if (this.Details.sonod_name == 'জাতীয় পরিচয়পত্র সংশোধন প্রত্যয়ন') {
@@ -274,6 +290,15 @@ export default {
         } else if (this.Details.sonod_name == 'ইউনিয়ন পরিষদ নাগরিক লিস্ট') {
              this.readonly = true
             this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে কোন রাষ্ট্রদ্রোহিতার অভিযোগ নেই। তাই তাকে ${this.Details.sonod_name} প্রদান করা হলো ।`;
+        }  else if (this.Details.sonod_name == 'নতুন ভোটারের প্রত্যয়ন পত্র') {
+             this.readonly = true
+            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে কোন রাষ্ট্রদ্রোহিতার অভিযোগ নেই। তিনি ভোটার তালিকা হালনাগাদ করার সময় অনুপস্থিত/বাহিরে থাকার কারণে ভোটার হতে পারে নি। তাই তাকে নতুন ভোটার তালিকায় অন্তর্ভুক্ত করার জন্য সুপারিশ করছি ।`;
+        }  else if (this.Details.sonod_name == 'বেকারত্বের সনদপত্র') {
+             this.readonly = true
+            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে কোন রাষ্ট্রদ্রোহিতার অভিযোগ নেই।
+            <br/>
+            <br/>
+            &nbsp; &nbsp; &nbsp; আমার জানামতে বর্তমানে সে বেকার ও কর্মহীন ।`;
         } else {
              this.readonly = true
             this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার স্থায়ী বাসিন্দা। আমার জানামতে তার বিরুদ্ধে কোন রাষ্ট্রদ্রোহিতার অভিযোগ নেই। তাই তাকে ${this.Details.sonod_name} প্রদান করা হলো ।`;

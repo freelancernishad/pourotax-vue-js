@@ -280,9 +280,9 @@
                         </div>
                     </div>
                     <div class="col-md-4"
-                        v-if="sonodnamedata.enname == 'No Objection Letter to Transfer of Constituency'">
+                        v-if="sonodnamedata.enname == 'Voter Transfer Certificate'">
                         <div class="form-group">
-                            <label for="" class="labelColor">স্থানান্তরিত এলাকার নাম</label>
+                            <label for="" class="labelColor">স্থানান্তরিত এলাকার নাম (গ্রাম,ডাকঘর,উপজেলা,জেলা)</label>
                             <input type="text" class="form-control" v-model="form.Name_of_the_transferred_area">
                         </div>
                     </div>
@@ -790,7 +790,7 @@
                 <div class="col-md-4 col-6 mt-3" v-if="sonodnamedata.bnname == 'প্রতিবন্ধী সনদপত্র'"><b>প্রতিবন্ধী :
                     </b>{{ form.disabled }}</div>
                 <div class="col-md-4 col-6 mt-3"
-                    v-if="sonodnamedata.enname == 'No Objection Letter to Transfer of Constituency'"><b>স্থানান্তরিত
+                    v-if="sonodnamedata.enname == 'Voter Transfer Certificate'"><b>স্থানান্তরিত
                         এলাকার নাম : </b>{{ form.Name_of_the_transferred_area }}</div>
                 <div class="col-md-4 col-6 mt-3" v-if="sonodnamedata.enname == 'Certificate'"><b>প্রত্যয়নপত্র এর বিষয় :
                     </b>{{ form.The_subject_of_the_certificate }}</div>
