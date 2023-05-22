@@ -778,7 +778,7 @@ if($payment->status=='Paid'){
                 $deccription = "Congratulation! Your application $sonod->sonod_Id has been approved. Document is available at  $sonodUrl";
                 // $deccription = "অভিনন্দন! আপনার আবেদনটি সফলভাবে অনুমোদিত হয়েছে। সনদ : $sonodUrl রশিদ : $InvoiceUrl";
                 // smsSend($deccription, $sonod->applicant_mobile);
-                SmsNocSmsSend($deccription, $sonod->applicant_mobile);
+                SmsNocSmsSend($deccription, $sonod->applicant_mobile,$unioun_name);
 
             } elseif ($payment_type == 'Postpaid') {
                 $paymentUrl =  url("/sonod/payment/$id");

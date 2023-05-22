@@ -11,6 +11,10 @@ Vue.component('b-button', BButton)
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 
+import Applicationform from './components/form/form.vue'
+Vue.component('Applicationform', Applicationform);
+import ApplicationformwitnNid from './components/form/formwithNid.vue'
+Vue.component('ApplicationformwitnNid', ApplicationformwitnNid);
 
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
