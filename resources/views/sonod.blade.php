@@ -14,7 +14,7 @@
 <body style="font-family: 'bangla', sans-serif;">
 
 
-    <div style="width:800px; padding:20px; border: 10px solid #787878">
+    <div style="width:800px; padding:15px; border: 10px solid #787878">
         <div style="width:750px;  padding:20px; border: 5px solid #11083a;position:relative;overflow: hidden; ">
 
 
@@ -73,7 +73,7 @@
 </table>
 
 
-<div class="nagorik_sonod" style="margin-bottom:10px;">
+<div class="nagorik_sonod" style="margin-bottom:7px;">
     <?php
     $string = "টিপ বোঝে না, টোপ বোঝে না টিপ বোঝে না, কেমন বাপু লোক";
      strlen('ভোটার এলাকা স্থানান্তর');
@@ -214,7 +214,7 @@
   color: white;
   text-align: center;
   padding: 2px 2px;font-size: 16px;     margin-top: 0px;" class="m-0">"সময়মত পৌরসভা কর পরিশোধ করুন। পৌরসভার উন্নয়নমূলক কাজে সহায়তা করুন"</p>
-                  <p class="m-0" style="font-size:14px;text-align:center">ইস্যুকৃত সনদটি যাচাই করতে QR কোড স্ক্যান করুন অথবা ভিজিট করুন {{ $uniouninfo->domain }}</p>
+                  <p class="m-0" style="font-size:14px;text-align:center;margin:0 !important">ইস্যুকৃত সনদটি যাচাই করতে QR কোড স্ক্যান করুন অথবা ভিজিট করুন {{ $uniouninfo->domain }}</p>
             </div>
         </div>
     </div>
