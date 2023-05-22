@@ -185,7 +185,7 @@ curl_close($curl);
           "ipn_info" => [
              "ipn_channel" => "3",
              "ipn_email" => "freelancernishad123@gmail.com",
-             "ipn_uri" => "$url/api/ipn"
+             "ipn_uri" => "$url/api/ipns"
           ],
           "mac_addr" => "$whitelistip"
        ];
