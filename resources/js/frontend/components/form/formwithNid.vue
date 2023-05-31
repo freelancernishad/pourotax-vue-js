@@ -192,7 +192,28 @@
                     </div>
 
 
-                    <div class="col-md-5">
+
+
+                    <div class="col-md-12 row mb-3">
+                        <div class="col-md-4">
+                            <label for="" class="labelColor">আইডির ধরণ</label>
+                            <select class="form-control" v-model="attactType" >
+                                <option value="">নির্বাচন করুন</option>
+                                <option value="nid">জাতীয় পরিচয়পত্র</option>
+                                <option value="dob">জন্ম নিবন্ধন</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-5" v-if="attactType=='dob'">
+                        <div class="form-group">
+                            <label for="" class="labelColor">জন্ম নিবন্ধন নং</label>
+                            <input type="text" class="form-control" v-model="form.applicant_birth_certificate_number">
+                        </div>
+                    </div>
+
+                    <div class="col-md-5"  v-if="attactType=='nid'">
                         <div class="form-group">
                             <label for="" class="labelColor">জাতীয় পরিচয়পত্র নং</label>
                             <input type="text" class="form-control" v-model="form.applicant_national_id_number">
@@ -204,7 +225,7 @@
                             <input type="date" class="form-control" v-model="form.applicant_date_of_birth">
                         </div>
                     </div>
-                    <div class="col-md-2" style="display: flex;justify-content: space-around;align-items: center;margin-top: 14px;">
+                    <div class="col-md-2" style="display: flex;justify-content: space-around;align-items: center;margin-top: 14px;"  v-if="attactType=='nid'">
                         <div class="form-group mb-0">
                            <button class="btn btn-info" type="button" v-if="nidSearch" disabled>অপেক্ষা করুন....</button>
                            <button class="btn btn-info" type="button" @click="checknid" v-else>Check Nid</button>
@@ -217,7 +238,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="" class="labelColor">আবেদনকারীর নাম <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" v-model="form.applicant_name" required disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_name" required :disabled="attactType=='nid'">
                         </div>
                     </div>
 
@@ -236,7 +257,7 @@
                     <div class="col-md-4" v-else>
                         <div class="form-group">
                             <label for="" class="labelColor">লিঙ্গ</label>
-                            <select class="form-control" v-model="form.applicant_gender" disabled>
+                            <select class="form-control" v-model="form.applicant_gender" :disabled="attactType=='nid'">
                                 <option value="">লিঙ্গ নির্বাচন করুন</option>
                                 <option>পুরুষ</option>
                                 <option>মহিলা</option>
@@ -248,14 +269,14 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="" class="labelColor">পিতা/স্বামীর নাম</label>
-                            <input type="text" class="form-control" v-model="form.applicant_father_name" disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_father_name" :disabled="attactType=='nid'">
                         </div>
                     </div>
 
                     <div class="col-md-4" >
                         <div class="form-group">
                             <label for="" class="labelColor">মাতার নাম</label>
-                            <input type="text" class="form-control" v-model="form.applicant_mother_name" disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_mother_name" :disabled="attactType=='nid'">
                         </div>
                     </div>
 
@@ -527,7 +548,7 @@
                         <div class="form-group" >
                             <label for="" class="labelColor">বিভাগ</label>
 
-                            <input type="text" v-model="Pdivision" class="form-control" disabled>
+                            <input type="text" v-model="Pdivision" class="form-control" :disabled="attactType=='nid'">
                             <!-- <select class='form-control' name="division" id="division" v-model="Pdivision" @change="getdistrictFun" >
                             <option value="">বিভাগ নির্বাচন করুন</option>
                                 <option v-for="div in getdivisions" :key="div.id" :value="div.id">{{ div.bn_name }}</option>
@@ -544,7 +565,7 @@
                             <option v-for="dist in getdistricts" :key="dist.id" :value="dist.id">{{ dist.bn_name }}</option>
                         </select> -->
 
-                            <input type="text" class="form-control" v-model="form.applicant_present_district" disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_present_district" :disabled="attactType=='nid'">
                         </div>
                         <div class="form-group">
                             <label for="" class="labelColor">উপজেলা/থানা</label>
@@ -554,11 +575,11 @@
                             <option v-for="thana in getthanas" :key="thana.id" :value="thana.bn_name">{{ thana.bn_name }}</option>
                         </select> -->
 
-                            <input type="text" class="form-control" v-model="form.applicant_present_Upazila" disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_present_Upazila" :disabled="attactType=='nid'">
                         </div>
                         <div class="form-group">
                             <label for="" class="labelColor">পোষ্ট অফিস</label>
-                            <input type="text" class="form-control" v-model="form.applicant_present_post_office" disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_present_post_office" :disabled="attactType=='nid'">
                         </div>
                         <div class="form-group">
                             <label for="" class="labelColor">ওয়ার্ড নং</label>
@@ -579,7 +600,7 @@
                         </div>
                         <div class="form-group">
                             <label for="" class="labelColor">গ্রাম/মহল্লা</label>
-                            <input type="text" class="form-control" v-model="form.applicant_present_village" disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_present_village" :disabled="attactType=='nid'">
                         </div>
                         <!-- <div class="form-group">
                             <label for="" class="labelColor">রোড/ব্লক/সেক্টর</label>
@@ -605,7 +626,7 @@
                                 <option v-for="div in getdivisionsPer" :key="div.id" :value="div.id">{{ div.bn_name }}</option>
                         </select> -->
 
-                            <input type="text" class="form-control" v-model="Perdivision" disabled>
+                            <input type="text" class="form-control" v-model="Perdivision" :disabled="attactType=='nid'">
                         </div>
 
 
@@ -618,7 +639,7 @@
                             <option v-for="dist in getdistrictsPer" :key="dist.id" :value="dist.id">{{ dist.bn_name }}</option>
                         </select> -->
 
-                            <input type="text" class="form-control" v-model="form.applicant_permanent_district" disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_permanent_district" :disabled="attactType=='nid'">
                         </div>
                         <div class="form-group">
                             <label for="" class="labelColor">উপজেলা/থানা</label>
@@ -626,11 +647,11 @@
                                 <option value="">উপজেলা নির্বাচন করুন</option>
                                 <option v-for="thana in getthanasPer" :key="thana.id" :value="thana.bn_name">{{ thana.bn_name }}</option>
                             </select> -->
-                            <input type="text" class="form-control" v-model="form.applicant_permanent_Upazila" disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_permanent_Upazila" :disabled="attactType=='nid'">
                         </div>
                         <div class="form-group">
                             <label for="" class="labelColor">পোষ্ট অফিস</label>
-                            <input type="text" class="form-control" v-model="form.applicant_permanent_post_office" disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_permanent_post_office" :disabled="attactType=='nid'">
                         </div>
 
                         <div class="form-group">
@@ -653,7 +674,7 @@
 
                         <div class="form-group">
                             <label for="" class="labelColor">গ্রাম/মহল্লা</label>
-                            <input type="text" class="form-control" v-model="form.applicant_permanent_village" disabled>
+                            <input type="text" class="form-control" v-model="form.applicant_permanent_village" :disabled="attactType=='nid'">
                         </div>
                         <!-- <div class="form-group">
                             <label for="" class="labelColor">রোড/ব্লক/সেক্টর</label>
