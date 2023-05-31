@@ -168,7 +168,7 @@ export default {
         // this.getunionInfo();
         if (this.Details.sonod_name == 'নাগরিকত্ব সনদ') {
             this.readonly = true
-            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার ${this.Details.applicant_name} বাসিন্দা। আমার জানামতে তার বিরুদ্ধে কোন রাষ্ট্রদ্রোহিতার অভিযোগ নেই। তাই তাকে ${this.Details.sonod_name} প্রদান করা হলো ।`;
+            this.form.sec_prottoyon = `জনাব ${this.Details.applicant_name} কে আমি ব্যক্তিগতভাবে চিনি ও জানি। সে জন্মসূত্রে বাংলাদেশের নাগরিক এবং অত্র পৌরসভার ${this.Details.applicant_resident_status} বাসিন্দা। আমার জানামতে তার বিরুদ্ধে কোন রাষ্ট্রদ্রোহিতার অভিযোগ নেই। তাই তাকে ${this.Details.sonod_name} প্রদান করা হলো ।`;
         } else if (this.Details.sonod_name == 'ট্রেড লাইসেন্স') {
              this.readonly = false
         } else if (this.Details.sonod_name == 'ওয়ারিশান সনদ') {
