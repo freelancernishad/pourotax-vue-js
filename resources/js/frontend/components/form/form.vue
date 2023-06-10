@@ -12,11 +12,12 @@
 
 
 
-                <div class="row" v-if="sonodnamedata.enname == 'Certificate of Inheritance' || sonodnamedata.enname == 'Inheritance certificate'" >
+                <div class="row" v-if="sonodnamedata.enname == 'Certificate of Inheritance' || sonodnamedata.enname == 'Inheritance certificate' || sonodnamedata.enname == 'Tenancy Permanent Residence Certificate'" >
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="" class="labelColor" v-if="sonodnamedata.enname == 'Certificate of Inheritance'">মৃত ব্যাক্তির নাম *</label>
                             <label for="" class="labelColor" v-if="sonodnamedata.enname == 'Inheritance certificate'">জীবিত ব্যক্তির নাম *</label>
+                            <label for="" class="labelColor" v-if="sonodnamedata.enname == 'Tenancy Permanent Residence Certificate'">বাড়ির মালিকের নাম</label>
                             <input type="text" class="form-control" v-model="form.utname">
                         </div>
                     </div>
