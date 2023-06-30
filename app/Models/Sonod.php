@@ -90,5 +90,6 @@ class Sonod extends Model
         'chaireman_sign',
         'cancedby',
         'cancedbyUserid',
+        'orthoBchor',
     ];
 }

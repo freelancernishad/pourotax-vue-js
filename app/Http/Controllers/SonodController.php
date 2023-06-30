@@ -376,35 +376,35 @@ if($payment->status=='Paid'){
         };
         return $sonodFinalId;
     }
-    function allsonodId($union, $sonodname)
+    function allsonodId($union, $sonodname,$orthoBchor)
     {
         $sonodFinalId = '';
-        $sortYear =  date('y')-1;
+
+        $date = date('m');
+        if($date<7){
+            $sortYear =  date('y')-1;
+        }else{
+            $sortYear =  date('y');
+        }
+
         $UniouninfoCount =   Uniouninfo::where('short_name_e', $union)->latest()->count();
-        $SonodCount =   Sonod::where(['unioun_name' => $union, 'sonod_name' => $sonodname])->latest()->count();
+        $SonodCount =   Sonod::where(['unioun_name' => $union, 'sonod_name' => $sonodname,'orthoBchor'=>$orthoBchor])->latest()->count();
         if ($UniouninfoCount > 0) {
             $Uniouninfo =   Uniouninfo::where('short_name_e', $union)->latest()->first();
             if ($SonodCount > 0) {
-                $Sonod =  Sonod::where(['unioun_name' => $union, 'sonod_name' => $sonodname])->latest()->first();
-                // $sonodFinalId = 'fgdfgdfg';
+                $Sonod =  Sonod::where(['unioun_name' => $union, 'sonod_name' => $sonodname,'orthoBchor'=>$orthoBchor])->latest()->first();
                 $sonodFinalId = $Sonod->sonod_Id + 1;
-                // if ($Sonod->sonod_Id == '') {
-                //     $sonod_Id = str_pad(00001, 5, '0', STR_PAD_LEFT);
-                //     $sonodFinalId =  $Uniouninfo->u_code . $sortYear . $sonod_Id;
-                // } else {
-                //     // $sonod_Id = $Sonod->Sonod+1;
-                //     $sonod_Id = str_pad($Sonod->sonod_Id, 5, '0', STR_PAD_LEFT);
-                //     // $sonodFinalId =  $Uniouninfo->u_code.$sortYear.$sonod_Id;
-                //     $sonodFinalId = $Sonod->sonod_Id + 1;
-                // }
             } else {
                 $sonod_Id = str_pad(00001, 5, '0', STR_PAD_LEFT);
                 $sonodFinalId =  $Uniouninfo->u_code . $sortYear . $sonod_Id;
             }
         };
+
+
+
+
         return $sonodFinalId;
     }
-
 
 
     public function sonod_update(Request $r)
@@ -510,8 +510,33 @@ if($payment->status=='Paid'){
         try {
             $unioun_name = $r->unioun_name;
             $sonod_name = $r->sonod_name;
+
+
+
+            ///////////////////////////////
+            $year = date('Y');
+            $date = date('m');
+            $orthobochor = '';
+            if($date<7){
+                $orthobochor = ($year-1)."-".date('y');
+            }else{
+                $orthobochor = $year."-". (date('y')+1);
+            }
+
+/////////////////////////////
+
+
+                $Insertdata['orthoBchor'] = $orthobochor;
+
+
+
+
+
+
             // return  $this->allsonodId($unioun_name, $sonod_name);
-            $Insertdata['sonod_Id'] = (string)$this->allsonodId($unioun_name, $sonod_name);
+            $sonodId = (string)$this->allsonodId($unioun_name, $sonod_name,$orthobochor);
+            $Insertdata['sonod_Id'] = $sonodId;
+            // $Insertdata['sonod_Id'] = (string)$this->allsonodId($unioun_name, $sonod_name);
             //    $oldsonod =  Sonod::where(['unioun_name' => $unioun_name,'sonod_name' => $sonod_name, 'year' => date('Y')])->latest()->first();
             // $oldsonodNo = (int)$oldsonod->sonod_Id;
             //  $Insertdata['sonod_Id'] =  $oldsonodNo+1;
