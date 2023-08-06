@@ -18,7 +18,11 @@ let trxcheck = require('./components/trxcheck.vue').default;
 let cashbook = require('./components/cashbook/list.vue').default;
 let cashbookForm = require('./components/cashbook/form.vue').default;
 
+
 let report = require('./components/report.vue').default;
+
+
+
 // let onlinereport = require('./components/onlinereport.vue').default;
 let sonodcountall = require('./components/sonodcountall.vue').default;
 
