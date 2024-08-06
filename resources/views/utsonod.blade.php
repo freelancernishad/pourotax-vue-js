@@ -20,9 +20,9 @@
             <table width="100%" style="border-collapse: collapse;" border="0">
                 <tr>
                     <td style="text-align: center;" width="20%">
-                    <span style="color:#b400ff;"><b>
+                    {{-- <span style="color:#b400ff;"><b>
                         শেখ হাসিনার মূলনীতি <br /> গ্রাম শহরের উন্নতি </b>
-                    </span>
+                    </span> --}}
                     </td>
                     <td style="text-align: center;" width="20%">
                         <img width="70px" src="{{ base64('backend/bd-logo.png') }}">
