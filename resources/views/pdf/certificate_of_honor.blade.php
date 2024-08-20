@@ -41,7 +41,7 @@
             </td>
             <td style="text-align: center;" width="50%">
                 <p style="font-size:20px">গণপ্রজাতন্ত্রী বাংলাদেশ</p>
-                <p style="font-size:25px">মেয়রের কার্যালয়</p>
+                <p style="font-size:25px">পৌরসভা কার্যালয়</p>
             </td>
             <td>
             </td>
@@ -141,7 +141,7 @@
             <div class="signature text-center position-relative" style="color:{{ $color }}">
                 <img width="170px"  src="{{ base64($uniouninfo->c_signture) }}"><br/>
                 <b><span style="color:{{ $C_color }};font-size:{{ $C_size }};">{{ $uniouninfo->c_name }}</span> <br />
-                        </b><span style="font-size:16px;">মেয়র</span><br />
+                        </b><span style="font-size:16px;">প্রশাসক</span><br />
 
                 {{ $uniouninfo->full_name }}<br> {{ $uniouninfo->thana }}, {{ $uniouninfo->district }} ।
 
