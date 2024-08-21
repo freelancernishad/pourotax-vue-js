@@ -1578,7 +1578,7 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
                     তারিখ: ".int_en_to_bn($created_at)."
                     </p>
 
-                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>পৌরসভা মেয়রের স্বাক্ষর</p>
+                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>পৌরসভা প্রশাসকের স্বাক্ষর</p>
                 </div>
             </div>
         </div>
@@ -1759,7 +1759,7 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
                     তারিখ: ".int_en_to_bn($created_at)."
                     </p>
 
-                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>পৌরসভা মেয়রের স্বাক্ষর</p>
+                    <p style='float:right;width:30%;text-align:right;padding:10px 15px' class='defaltfont'>পৌরসভা প্রশাসকের স্বাক্ষর</p>
                 </div>
             </div>
         </div>
@@ -2146,7 +2146,7 @@ $TaxInvoice = Payment::where('sonodId',$row->id)->latest()->first();
                       </td>
                       <td style="text-align: center;" width="50%">
                           <p style="font-size:20px">গণপ্রজাতন্ত্রী বাংলাদেশ</p>
-                          <p style="font-size:25px">মেয়রের কার্যালয়</p>
+                          <p style="font-size:25px">পৌরসভা কার্যালয়</p>
 
                       </td>
                       <td>
@@ -2203,7 +2203,7 @@ if($row->unioun_name=='dhamor'){
 
             $ccc = '<img width="170px"  src="' . base64($row->chaireman_sign) . '"><br/>
                               <b><span style="color:'.$C_color.';font-size:'.$C_size.';">' . $row->chaireman_name . '</span> <br />
-                                      </b><span style="font-size:16px;">মেয়র</span><br />';
+                                      </b><span style="font-size:16px;">প্রশাসক</span><br />';
 
 
 
