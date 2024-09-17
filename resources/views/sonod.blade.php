@@ -195,7 +195,17 @@
                             <div class="signature text-center position-relative" style="color:{{ $color }}">
                                 <img width="130px" style="{{ $style }}"  src="{{ base64($row->chaireman_sign) }}"><br/>
                                 <b><span style="color:{{ $C_color }};font-size:{{ $C_size }};">{{ $row->chaireman_name }}</span> <br />
-                                        </b><span style="font-size:16px;">প্রশাসক</span><br />
+
+                                    @if($row->unioun_name=='birampur')
+                                </b><span style="font-size:16px;">প্যানেল মেয়র-৩</span><br />
+                                    @else
+
+                                </b><span style="font-size:16px;">প্রশাসক</span><br />
+                                    @endif
+
+
+
+
 
                                 {{ $uniouninfo->full_name }}<br> {{ $uniouninfo->thana }}, {{ $uniouninfo->district }} ।
                             <br>
