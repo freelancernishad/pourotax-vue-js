@@ -13,7 +13,8 @@ class AuthServiceProvider extends ServiceProvider
      * @var array<class-string, class-string>
      */
     protected $policies = [
-        // 'App\Models\Model' => 'App\Policies\ModelPolicy',
+        // Register your models and policies here
+        'App\Models\User' => 'App\Policies\UserPolicy', // Example
     ];
 
     /**
@@ -23,8 +24,6 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerPolicies();
-
-        //
+        $this->registerPolicies(); // Ensure it's in AuthServiceProvider only
     }
 }

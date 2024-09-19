@@ -2,9 +2,7 @@
 
 namespace App\Providers;
 
-
-use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\Passport;
 
 class AppServiceProvider extends ServiceProvider
@@ -26,7 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerPolicies();
+        // Remove or comment out the call to registerPolicies() from here
+        // $this->registerPolicies();  // This line should be removed
 
         if (! $this->app->routesAreCached()) {
             Passport::routes();
