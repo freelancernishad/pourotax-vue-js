@@ -2205,11 +2205,11 @@ if($row->unioun_name=='dhamor'){
                               <b><span style="color:'.$C_color.';font-size:'.$C_size.';">' . $row->chaireman_name . '</span> <br />';
 
 
-                                if($row->unioun_name=='birampur'){
-                                $ccc .= '</b><span style="font-size:16px;">প্যানেল মেয়র-৩</span><br />';
-                                }else{
+                                // if($row->unioun_name=='birampur'){
+                                // $ccc .= '</b><span style="font-size:16px;">প্যানেল মেয়র-৩</span><br />';
+                                // }else{
                                 $ccc .='</b><span style="font-size:16px;">প্রশাসক</span><br />';
-                                }
+                                // }
 
 
 
